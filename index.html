@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Filimonov">
+    <meta name="description" content="MDN test skills on form basic controls">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://httpbin.org/post" method="post">
+        <ul>
+            <li>
+                <label for="id">User ID</label>
+                <input type="text" id="id" name="id">
+            </li>
+            <li>
+                <label for="passport">Passport</label>
+                <input type="text" id="passport" name="passport">
+            </li>
+        </ul>
+        <fieldset>
+            <legend>Who is your favorite pony?</legend>
+            <ul>
+                <li>
+                    <input type="radio" id="pinkie-pie" name="pony" value="pinkie-pie">
+                    <label for="pinkie-pie">Pinkie Pie</label>
+                </li>
+                <li>
+                    <input type="radio" id="rainbow-dash" name="pony" value="rainbow-dash">
+                    <label for="rainbow-dash">Rainbow Dash</label>
+                </li>
+                <li>
+                    <input type="radio" id="twilight-sparkle" name="pony" value="twilight-sparkle">
+                    <label for="twilight-sparkle">Twilight Sparkle</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Hotdog preferences</legend>
+            <ul>
+                <li>
+                    <input type="checkbox" id="vegan" name="hotdog-preferences" value="vegan">
+                    <label for="vegan">Vegan</label>
+                </li>
+                <li><input type="checkbox" id="onions" name="hotdog-preferences" value="onions">
+                    <label for="onions">Onions</label>
+                </li>
+            </ul>
+        </fieldset>
+        <div>
+            <input type="file" id="gallery-img" accept="image/png, image/jpeg" name="gallery-img">
+            <label for="gallery-img">Choose gallery images to upload</label>
+        </div>
+        <button type="submit">Send data</button>
+    </form>
+</body>
+</html>
